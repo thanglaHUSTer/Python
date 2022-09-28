@@ -85,7 +85,7 @@ print(s.replace('l', '(ell)'))   # Thay thế chuỗi; prints "he(ell)(ell)o"
 print(' world '.strip())         # Bỏ đi khoảng trắng ở đầu và cuỗi chuỗi;
                                  # prints "world"
 print('Nguyen Thi  Hien'.split()) # Split chuỗi ra list, phần tích bằng 1 hoặc nhiều
-                                  # khoảng trắng ; prints ['Nguyen', 'Thanh', 'Tuan']
+                                  # khoảng trắng ; prints ['Nguyen', 'Thi', 'Hien']
 print(' '.join(['Nguyen', 'Thi', 'Hien']) # Join các phần tử trong list lại với nhau,
                                           # các phần tử cách nhau bằng 1 khoảng trắng;
                                           # prints "Nguyen Thi Hien"
