@@ -111,3 +111,19 @@ print(xs)          # Prints "[3, 1, 'foo', 'bar']"
 x = xs.pop()       # Bỏ đi phần tử cuối cùng khỏi list và trả về phần tử đấy
 print(x, xs)       # Prints "bar [3, 1, 'foo']"
 ```
+
+**Slicing** Thay vì lấy từng phần tử một trong list thì python hỗ trợ truy xuất nhiều phần tử 1 lúc gọi là slicing.
+
+```python
+nums = list(range(5)) # range sinh ta 1 list các phần tử
+print(nums)           # Prints "[0, 1, 2, 3, 4]"
+print(nums[2:4])      # Lấy phần tử thứ 2->4, python chỉ số mảng từ 0;
+print(nums[2:])       # Lấy phần tử thứ 2 đến hết; prints "[2, 3, 4]"
+print(nums[:2])       # Lấy từ đầu đến phần tử thứ 2; prints "[0, 1]"
+print(nums[:])        # Lấy tất cả phần tử trong list; prints "[0, 1, 2, 3, 4]"
+print(nums[:-1])      # Lấy từ phần tử đầu đến phần tử gần cuối trong list;
+                      # prints "[0, 1, 2, 3]"
+nums[2:4] = [8, 9]    # Gán giá trị mới cho phần tử trong mảng từ vị trí 2->4
+print(nums)           # Prints "[0, 1, 8, 9, 4]"
+```
+
