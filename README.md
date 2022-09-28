@@ -127,3 +127,15 @@ nums[2:4] = [8, 9]    # Gán giá trị mới cho phần tử trong mảng từ 
 print(nums)           # Prints "[0, 1, 8, 9, 4]"
 ```
 
+**Loops** Để duyệt và in ra các phần tử trong list
+
+```python
+animals = ['cat', 'dog', 'monkey']
+# duyệt giá trị không cần chỉ số
+for animal in animals:
+print('%s' % (animal))
+# duyệt giá trị kèm chỉ số dùng enumerate
+for idx, animal in enumerate(animals):
+print('#%d: %s' % (idx + 1, animal))
+# Prints "#1: cat", "#2: dog", "#3: monkey", in mỗi thành phần trong list 1 dòng
+```
