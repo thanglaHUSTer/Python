@@ -24,7 +24,7 @@ thì cũng dễ nhớ. Thứ hai là khi người khác đọc code của bạn 
 - Tên biến chỉ được chứa các chữ cái, các số và dấu gạch dưới (A-Z, a-z, 0-9, _)
 - Tên biến có phân biệt chữ hoa chữ thường. Ví dụ age, AGE, Age, aGE là 4 tên biến khác nhau.
 
-## Số
+### Số
 
 Số nguyên và số thực dùng như các ngôn ngữ khác
 
@@ -45,7 +45,7 @@ print(type(y))             # Prints "<class 'float'>"
 print(y, y + 1, y * 2, y ** 2) # Prints "2.5 3.5 5.0 6.25"
 ```
 
-## Phép logic
+### Phép logic
 
 Python có kiểu dữ liệu boolean, các biến kiểu này nhận 2 giá trị là True hoặc False. Python có các phép tính logic nhưng dùng các từ tiếng anh (and, or) thay cho kí hiệu (&&, ||):
 
@@ -59,7 +59,7 @@ print(not t)     # NOT; prints "False"
 print(t != f)    # XOR; prints "True"
 ```
 
-## Chuỗi
+### Chuỗi
 
 Python có hỗ trợ dạng chuỗi, để lưu giá trị dạng chuỗi có thể để trong dấu " hoặc ’ nhưng mở bằng dấu nào phải đóng bằng dấu đấy.
 
@@ -78,6 +78,7 @@ print(hw12)                # prints "hello world 12"
 Kiểu string có rất nhiều method để xử lý chuỗi.
 
 ```python
+s = "hello"
 print(s.capitalize())            # Viết hoa chữ cái đầu; prints "Hello"
 print(s.upper())                 # Viết hoa tất cả chữ cái; prints "HELLO"
 print(s.replace('l', '(ell)'))   # Thay thế chuỗi; prints "he(ell)(ell)o"
@@ -90,3 +91,23 @@ print(' '.join(['Nguyen', 'Thi', 'Hien']) # Join các phần tử trong list l�
                                           # prints "Nguyen Thi Hien"
 ```     
 
+## Containers
+
+Các kiểu dữ liệu cơ bản chỉ chứa một giá trị mỗi biến (số, chuỗi), tuy nhiên nhiều lúc mình cần chứa nhiều giá trị, ví dụ chứa tên học sinh trong một lớp có 100 bạn. Mình không thể tạo 100 biến để lưu tên 100 bạn. Vậy nên cần các kiểu dữ liệu có thể chứa nhiều giá trị khác nhau. Đó là container (collection). Python có một số container như: list, tuple, set, dictionary. Dưới tôi sẽ trình bày hai kiểu dữ liệu collection mà mọi người hay gặp nhất trong python là list và dictionary.
+
+### List
+
+List trong Python giống như mảng (array) nhưng không cố định kích thước và có thể chứa nhiều
+kiểu dữ liệu khác nhau trong 1 list.
+
+```python
+xs = [3, 1, 2]     # Tạo 1 list
+print(xs, xs[2])   # Prints "[3, 1, 2] 2"
+print(xs[-1])      # Chỉ số âm là đếm phần tử từ cuối list lên; prints "2"
+xs[2] = 'foo'      # List có thể chứa nhiều kiểu phần tử khác nhau
+print(xs)          # Prints "[3, 1, 'foo']"
+xs.append('bar')   # Thêm phần tử vào cuối list
+print(xs)          # Prints "[3, 1, 'foo', 'bar']"
+x = xs.pop()       # Bỏ đi phần tử cuối cùng khỏi list và trả về phần tử đấy
+print(x, xs)       # Prints "bar [3, 1, 'foo']"
+```
