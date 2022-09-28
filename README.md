@@ -133,9 +133,9 @@ print(nums)           # Prints "[0, 1, 8, 9, 4]"
 animals = ['cat', 'dog', 'monkey']
 # duyệt giá trị không cần chỉ số
 for animal in animals:
-print('%s' % (animal))
+    print('%s' % (animal))
 # duyệt giá trị kèm chỉ số dùng enumerate
 for idx, animal in enumerate(animals):
-print('#%d: %s' % (idx + 1, animal))
+    print('#%d: %s' % (idx + 1, animal))
 # Prints "#1: cat", "#2: dog", "#3: monkey", in mỗi thành phần trong list 1 dòng
 ```
