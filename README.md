@@ -33,7 +33,7 @@ Nó dùng để:
 - Python sử dụng các dòng mới để hoàn thành một lệnh, trái ngược với các ngôn ngữ lập trình khác thường sử dụng dấu chấm phẩy hoặc dấu ngoặc đơn.
 - Python dựa vào thụt lề, sử dụng khoảng trắng để xác định phạm vi; chẳng hạn như phạm vi của vòng lặp, hàm và lớp. Các ngôn ngữ lập trình khác thường sử dụng dấu ngoặc nhọn cho mục đích này.
 
-# Kiến thức về Python 
+# Let's Go 
 
 Sau đây là toàn bộ kiến thức về ngôn ngữ lập trình Python mà tôi muốn chia sẻ. 
 
