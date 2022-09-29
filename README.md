@@ -139,3 +139,37 @@ for idx, animal in enumerate(animals):
     print('#%d: %s' % (idx + 1, animal))
 # Prints "#1: cat", "#2: dog", "#3: monkey", in mỗi thành phần trong list 1 dòng
 ```
+
+### Dictionaries
+
+Dictionaries lưu thông tin dưới dạng key, value.
+
+```python
+d = {'cat': 'cute', 'dog': 'furry'} # Tạo dictionary, các phần tử dạng key:value
+print(d['cat'])           # Lấy ra value của key 'cat' trong dictionary prints "cute"
+print('cat' in d)         # Kiểm tra key có trong dictionary không; prints "True"
+d['fish'] = 'wet'         # Gán key, value, d[key] = value
+print(d['fish'])          # Prints "wet"
+# print(d['monkey'])      # Lỗi vì key 'monkey' không trong dictionary
+del d['fish']             # Xóa phần tử key:value từ dictionary
+```
+
+**Loop** Duyệt qua các phần tử trong dictionary
+
+```python
+d = {'person': 2, 'cat': 4, 'spider': 8}
+# Duyệt key
+for animal in d:
+    print('A %s has %d legs' % (animal, d[animal]))
+# Prints "A person has 2 legs", "A cat has 4 legs", "A spider has 8
+
+# Duyệt value
+for legs in d.values():
+    print('%d legs' % (legs))
+# Prints "2 legs", "4 legs", "8 legs"
+
+# Duyệt cả key và value
+for animal, legs in d.items():
+    print('A %s has %d legs' % (animal, legs))
+# Prints "A person has 2 legs", "A cat has 4 legs", "A spider has 8 legs"
+```
