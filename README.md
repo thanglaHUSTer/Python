@@ -161,7 +161,7 @@ d = {'person': 2, 'cat': 4, 'spider': 8}
 # Duyệt key
 for animal in d:
     print('A %s has %d legs' % (animal, d[animal]))
-# Prints "A person has 2 legs", "A cat has 4 legs", "A spider has 8
+# Prints "A person has 2 legs", "A cat has 4 legs", "A spider has 8"
 
 # Duyệt value
 for legs in d.values():
@@ -173,3 +173,48 @@ for animal, legs in d.items():
     print('A %s has %d legs' % (animal, legs))
 # Prints "A person has 2 legs", "A cat has 4 legs", "A spider has 8 legs"
 ```
+
+## Function
+
+Function (hàm) là một khối code python được thực hiện một hoặc một số chức năng nhất định. Hàm
+có input và có ouptut, trước khi viết hàm mọi người nên xác định hàm này để làm gì? input là gì? output làm gì?
+
+Ví dụ hàm kiểm tra số nguyên tố, mục đích để kiếm tra 1 số xem có phải là số nguyên tố hay không, input là 1 số nguyên dương, output dạng boolean (True/False). True tức là số input là số nguyên tố, False nghĩa là không phải số nguyên tố.
+
+Function trong python được định nghĩa với keyword **def**.
+
+```python
+# Hàm có input là 1 số và output xem số đấy âm, dương hay số 0
+# Định nghĩa hàm
+def sign(x):
+    if x > 0:
+        return 'positive'
+    elif x < 0:
+        return 'negative'
+    else:
+        return 'zero'
+for x in [-1, 0, 1]:
+    # Gọi hàm
+    print(sign(x))
+# Prints "negative", "zero", "positive"
+```
+
+## Thư viện trong python
+
+Thư viện (library) bao gồm các hàm (function) hay lớp (class) được viết sẵn với các chức năng khác nhau. Ví dụ thư viện math cung cấp các hàm về tính toán như exp, sqrt, floor,...
+
+Muốn nhập thư viện vào chương trình, ta dùng cú pháp: import tên thư viện, ví dụ: import numpy.
+
+Đối với những thư viện có tên dài, ta thường rút ngắn lại để sau này dễ sử dụng. Khi đó, ta
+sử dụng cú pháp: import tên thư viện as tên rút gọn, ví dụ: import matplotlib.pyplot as plt. Sau này, khi sử dụng đến thư viện, ta chỉ cần gọi đến tên rút gọn thay vì phải gõ lại tên đầy đủ của thư viện, ví dụ thay vì viết matplotlib.pyplot.plot, ta chỉ cần viết plt.plot.
+
+## Thư viện Numpy
+
+Vì Python là scripting language nên không thích hợp cho machine learning, numpy giải quyết vấn
+đề trên bằng cách xây dựng 1 thư viện viết bằng C nhưng có interface Python. Như vậy Numpy
+cộng hưởng 2 ưu điểm của 2 ngôn ngữ: nhanh như C và đơn giản như Python. Điều này giúp ích rất
+nhiều cho cộng đồng Machine Learning trên Python.
+
+Mảng trong numpy gồm các phần tử có dùng kiểu giá trị, chỉ số không âm được bắt đầu từ
+0, số chiều được gọi là rank của mảng Numpy, và shape của mảng là một tuple các số nguyên đưa
+ra kích thước của mảng theo mỗi chiều.
