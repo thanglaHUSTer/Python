@@ -37,7 +37,7 @@ Nó dùng để:
 
 Sau đây là toàn bộ kiến thức về ngôn ngữ lập trình Python mà tôi muốn chia sẻ. 
 
-Bạn có thể tìm hiểu Python cơ bản để phục vụ cho việc học Machine Learning và Deep Learning tại đây.
+Bạn có thể tìm hiểu Python cơ bản để phục vụ cho việc học Machine Learning và Deep Learning tại [đây](Python_co_ban/README.md).
 
 | Lesson Number |          Topic           | Lesson Grouping | 
 |:-------------:|:------------------------:| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
