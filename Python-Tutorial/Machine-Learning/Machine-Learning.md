@@ -246,3 +246,5 @@ plt.hist(x, 5)
 plt.show()
 ```
 
+![Image](01.jpg)
+
